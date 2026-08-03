@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCC</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navigation */
+nav{
+    background:#006400;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+    height:500px;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('images/index-images/index_top_banner.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#28a745;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Sections */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom:20px;
+    color:#006400;
+}
+
+/* Stats */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    width:220px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#006400;
+    font-size:30px;
+}
+
+/* Match Section */
+.match{
+    max-width:500px;
+    margin:auto;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.social-links img{
+    width:40px;
+    height:40px;
+    vertical-align:middle;
+}
+
+.social-links img:hover{
+    transform:scale(1.1);
+}
+
+ 
+.social-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.social-links a.youtube{
+    color: #FF0000;
+}
+
+.social-links a.instagram{
+    color: #E1306C;
+}
+
+/* Footer */
+</style>
+</head>
+
+<body>
+
+<nav>
+<!-- Load JavaScript files -->
+    <h2 id="clubName"></h2>
+
+
+<script src="js/constants.js"></script>
+<script src="js/script.js"></script>
+ 
+	
+     <ul>
+        <li>#Home</a></li>
+        <li>#Players</a></li>
+        <li>#Matches</a></li>
+        <li>#Gallery</a></li>
+        <li>#Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+	<!-- Load JavaScript files -->
+    <h1 id="clubNameTop"></h1>
+ 
+
+<script src="js/constants.js"></script>
+<script src="js/script.js"></script>
+        
+        <p>Passion • Teamwork • Victory</p>
+      </a>
+    </div>
+</section>
+<section class="section">
+    <h2>About Stuttgart Premier League</h2>
+
+    <p>
+        <strong id="splDesc1"> </strong> <p strong id="splDesc2"> </p>
+    </p>
+
+    <br>
+
+    <p strong id="splDesc3"> 
+    </p>
+</section>
+
+<section class="section">
+    <h2>Team Statistics</h2>
+
+    <div class="stats">
+        <div class="card">
+            <h3>25+</h3>
+            <p>Players</p>
+        </div>
+
+        <div class="card">
+            <h3>50+</h3>
+            <p>Matches Won</p>
+        </div>
+
+        <div class="card">
+            <h3>10</h3>
+            <p>Trophies</p>
+        </div>
+
+        <div class="card">
+            <h3>15</h3>
+            <p>Years Experience</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Upcoming Match</h2>
+    <br>
+
+    <div class="card" style="margin:auto;width:400px;">
+        <h3>Blackforest Blasters vs MCC</h3>
+        <p>Saturday - 4:00 PM</p>
+        <p>National Cricket Stadium</p>
+    </div>
+	    <div class="card" style="margin:auto;width:400px;">
+        <h3>Thunder CC vs Warriors CC</h3>
+        <p>Saturday - 4:00 PM</p>
+        <p>National Cricket Stadium</p>
+    </div>
+</section>
+
+ 
+
+
+<footer>
+    <div class="footer-content">
+<!-- Load JavaScript files -->
+    <h3 id="clubNameBottom"> </h3>
+<script src="js/constants.js"></script>
+<script src="js/script.js"></script>
+
+
+
+ 
+         <p>Follow Us</p>
+
+        <div class="social-links">
+   
+&nbsp;&nbsp;&nbsp;<a href="https://www.youtube.com/@stuttgartpremierleague" target="_blank" class="youtube">
+    <i class="fab fa-youtube"></i>   <img src="images/index-images/youtube-logo.png"  class="youtube"> Youtube
+</a>
+   <br>
+   
+           
+
+<a href="https://www.youtube.com/@stuttgartpremierleague" target="_blank"  class="instagram">
+    <i class="fab fa-youtube"></i>   <img src="images/index-images/instagram-icon-logo.png" class="instagram"> Insta
+</a>
+        </div>
+
+        <p>&copy; 2026 SPL. All Rights Reserved.</p>
+    </div>
+</footer>
+ 
+
+</body>
+</html>
+  
+  
