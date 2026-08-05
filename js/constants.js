@@ -13,3 +13,29 @@ const APP_CONFIG = {
 
    
    
+/* Gallery data — grouped by year.
+   Add or remove photos freely: the slideshow speed adapts to the count. */
+const GALLERY_YEARS = [
+  {
+    year: "2024",
+    photos: [
+      { src: "images/gallery-1.jpg", alt: "Batsman playing a cover drive", caption: "Season opener · cover drive to the boundary" },
+      { src: "images/gallery-4.jpg", alt: "Teams lined up before a match", caption: "Line-up before the derby at Cannstatt" }
+    ]
+  },
+  {
+    year: "2025",
+    photos: [
+      { src: "images/gallery-3.jpg", alt: "Fast bowler in delivery stride", caption: "Semi-final · pace from the pavilion end" },
+      { src: "images/gallery-5.jpg", alt: "Wicket keeper behind the stumps", caption: "A sharp take behind the stumps" },
+      { src: "images/gallery-6.jpg", alt: "Families watching from the boundary", caption: "Boundary-side crowd on finals day" }
+    ]
+  },
+  {
+    year: "2026",
+    photos: [
+      { src: "images/gallery-2.jpg", alt: "Team celebrating with the trophy", caption: "Champions · lifting the SPL trophy" },
+      { src: "images/spl-banner.jpg", alt: "Cricketers under floodlights", caption: "Floodlit night fixture" }
+    ]
+  }
+];   

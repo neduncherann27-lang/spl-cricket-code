@@ -4,15 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stuttgart Premier League — Community Cricket in Stuttgart</title>
-<meta name="description" content="Fixtures, team stats and news from the Stuttgart Premier League — matches, tournaments and cricketing events built on fair play." />
+<meta name="description" content="Fixtures, team stats, season gallery and news from the Stuttgart Premier League — matches, tournaments and cricketing events built on fair play." />
 <meta property="og:title" content="Stuttgart Premier League — Community Cricket" />
 <meta property="og:description" content="Fixtures, team stats and news from the Stuttgart Premier League — matches, tournaments and cricketing events built on fair play." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="icon" href="images/spl-logo.jpg" />
-<!--link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet" /-->
+ 
 <link rel="stylesheet" href="styles/spl-styles.css" />
 </head>
 <body>
@@ -29,6 +27,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#stats">Stats</a></li>
+		<li><a href="#gallery">Gallery</a></li>
         <li><a href="#matches">Matches</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -41,11 +40,11 @@
       <div class="hero-overlay"></div>
       <div class="shell hero-content">
         <p class="eyebrow">Season 2026</p>
-        <h1>Welcome to Stuttgart Premier League</h1>
+        <h1 id="clubNameTop">Welcome to Stuttgart Premier League</h1>
         <p class="tagline">Passion • Teamwork • Victory</p>
         <div class="cta-row">
           <a class="btn btn-gold" href="#matches">Upcoming Matches</a>
-          <a class="btn btn-outline" href="#about">About the League</a>
+          <a class="btn btn-outline" href="#gallery">Season Gallery</a>
         </div>
       </div>
     </section>
@@ -53,8 +52,8 @@
     <section id="about" class="shell section">
       <h2>About Stuttgart Premier League</h2>
       <div class="prose">
-        <p><strong>Stuttgart Premier League (SPL)</strong> is a cricket league that brings together cricket enthusiasts, talented players, and competitive teams to celebrate the spirit of the game. The league promotes sportsmanship, teamwork, and excellence while providing a platform for players to showcase their skills and passion for cricket.</p>
-        <p>SPL organizes exciting matches, tournaments, and cricketing events that foster community engagement and healthy competition. With a commitment to fair play and player development, the league aims to grow cricket and create memorable experiences for players, supporters, and fans.</p>
+        <p><strong id="splDesc1">Stuttgart Premier League (SPL)</strong> <span id="splDesc2">is a cricket league that brings together cricket enthusiasts, talented players, and competitive teams to celebrate the spirit of the game. The league promotes sportsmanship, teamwork, and excellence while providing a platform for players to showcase their skills and passion for cricket.</span></p>
+        <p id="splDesc3">SPL organizes exciting matches, tournaments, and cricketing events that foster community engagement and healthy competition. With a commitment to fair play and player development, the league aims to grow cricket and create memorable experiences for players, supporters, and fans.</p>
       </div>
     </section>
 
@@ -69,28 +68,39 @@
         </div>
       </div>
     </section>
+	
+	<!-- GALLERY: year tabs + auto slideshow   -->
+    <section id="gallery" class="shell section">
+      <h2>Season Gallery</h2>
+      <p class="section-lead">Pick a season — the slideshow runs on its own, pacing itself to how many photos that year holds.</p>
 
-    <section id="matches" class="shell section">
-      <h2>Upcoming Matches</h2>
-      <div class="match-grid">
-        <article class="card match">
-          <div class="match-head">
-            <span>Blackforest Blasters</span><span class="vs">vs</span><span>MCC</span>
-          </div>
-          <div class="match-body">
-            <p class="strong">Saturday · 4:00 PM</p>
-            <p>National Cricket Stadium</p>
-          </div>
-        </article>
-        <article class="card match">
-          <div class="match-head">
-            <span>Thunder CC</span><span class="vs">vs</span><span>Warriors CC</span>
-          </div>
-          <div class="match-body">
-            <p class="strong">Saturday · 4:00 PM</p>
-            <p>National Cricket Stadium</p>
-          </div>
-        </article>
+      <div class="gallery">
+        <div class="year-tabs" id="yearTabs"></div>
+
+        <div class="slider" id="slider" aria-roledescription="carousel" aria-label="Season gallery">
+          <div class="slides" id="slides"></div>
+          <button class="nav-btn prev" id="prevBtn" type="button" aria-label="Previous photo">&#8249;</button>
+          <button class="nav-btn next" id="nextBtn" type="button" aria-label="Next photo">&#8250;</button>
+        </div>
+
+        <div class="dots" id="dots"></div>
+        <p class="slider-meta" id="sliderMeta"></p>
+      </div>
+    </section>
+
+    <section id="matches" class="band">
+      <div class="shell section">
+        <h2>Upcoming Matches</h2>
+        <div class="match-grid">
+          <article class="card match">
+            <div class="match-head"><span>Blackforest Blasters</span><span class="vs">vs</span><span>MCC</span></div>
+            <div class="match-body"><p class="strong">Saturday · 4:00 PM</p><p>National Cricket Stadium</p></div>
+          </article>
+          <article class="card match">
+            <div class="match-head"><span>Thunder CC</span><span class="vs">vs</span><span>Warriors CC</span></div>
+            <div class="match-body"><p class="strong">Saturday · 4:00 PM</p><p>National Cricket Stadium</p></div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
@@ -98,7 +108,7 @@
   <footer id="contact" class="site-footer">
     <div class="shell footer-grid">
       <div>
-        <h3>Stuttgart Premier League</h3>
+        <h3 id="clubNameBottom">Stuttgart Premier League</h3>
         <p class="muted">Celebrating the spirit of cricket in Stuttgart through fair play, community and competition.</p>
         <p class="muted small">info@spl.com · +1 123 456 7890</p>
       </div>
@@ -112,5 +122,8 @@
     </div>
     <div class="copyright">© 2026 SPL. All Rights Reserved.</div>
   </footer>
+
+  <script src="js/constants.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 </html>
