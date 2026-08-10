@@ -20,8 +20,8 @@
         <img src="images/spl-logo.JPG" alt="Stuttgart Premier League crest" />
         <span id="clubName"> </span>
 		
-<script src="js/constants.js"></script>
-<script src="js/script.js"></script> 	
+ 
+ 
       </a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -29,7 +29,9 @@
         <li><a href="#stats">Stats</a></li>     
 		<li><a href="#gallery">Gallery</a></li>
         <li><a href="#teams">Teams</a></li>
-		   <li><a href="#sponsor">Sponsor</a></li>
+ 
+		   <li><a href="#sponsor">Community Partner</a></li>
+ 
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -43,7 +45,7 @@
         <p class="eyebrow">Season 2026</p>
         <h1 id="clubNameTop">Welcome to Stuttgart Premier League</h1>
         <p class="tagline">Passion • Teamwork • Victory</p>
-        <p class="sponsor-ribbon">Title Sponsor · <span id="titleSponsorNameHero"></span></p>
+        <p class="sponsor-ribbon">Community Partner<span id="titleSponsorNameHero"></span></p>
         <div class="cta-row">
           <a class="btn btn-gold" href="#teams">Teams</a>
           <a class="btn btn-outline" href="#gallery">Season Gallery</a>
@@ -65,8 +67,7 @@
         <div class="stat-grid">
           <div class="card stat"><p class="stat-value">130+</p><p class="stat-label">Players</p></div>
           <div class="card stat"><p class="stat-value">30+</p><p class="stat-label">Matches Played</p></div>
-          <!--div class="card stat"><p class="stat-value">10</p><p class="stat-label">Trophies</p></div>
-          <div class="card stat"><p class="stat-value">15</p><p class="stat-label">Years Experience</p></div-->
+    
         </div>
       </div>
     </section>
@@ -90,150 +91,47 @@
       </div>
     </section>
 
+ <!-- teams-->
+<section id="teams" class="band">
+  <div class="shell section">
+    <h2>Teams</h2>
+
+    <div id="team-grid" class="team-grid"></div>
+	  <script src="js/teams.js"></script>
+  </div>
+</section>
+
+     <!-- teams-->
 
 
 
-    <section id="teams" class="band">
-      <div class="shell section">
-        <h2>Teams</h2>
-        <div class="match-grid">
-          <article class="card match">
-            <div class="match-head"><span>Blackforest Blasters</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/blackforest_blasters.JPG"  ></div>
-          </article>
-		  
-
-		  	            <article class="card match">
-            <div class="match-head"><span>Canstatt Challengers</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/blackforest_blasters.JPG"  ></div>
-       
-       
-          </article>
-		            <article class="card match">
-            <div class="match-head"><span>Mora Royals</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/mora_royals.JPG"  ></div>
-          </article>
-		            <article class="card match">
-            <div class="match-head"><span>Neckar Nights</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/neckar_nights.JPG"  ></div>
-          </article>
-		  		            <article class="card match">
-            <div class="match-head"><span>Swabian Lions</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/swabian_lions.JPG"  ></div>
-          </article>
-		  <article class="card match">
-            <div class="match-head"><span> Würm Fires</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/würm_fires.JPG"  ></div>
-          </article>
-		  <article class="card match">
-            <div class="match-head"><span>Wüttemberg Warriors</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/wüttemberg_warriors.JPG"  ></div>
-          </article>		  
-		  <article class="card match">
-            <div class="match-head"><span>Wilhelma Wolves</span> </div>
-            <div class="match-body"> <img src="images/teamlogo/wilhelma_wolves.JPG"  ></div>
-          </article>
-
-	
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-    <!-- TITLE SPONSOR -->
-    <!--section id="sponsor" class="shell section sponsor-section">
-      <h2>Title Sponsor</h2>
-      <p class="section-lead">Our headline partner, powering every ball bowled this season.</p>
-
-      <article class="card sponsor-card">
-        <a class="sponsor-logo-wrap" id="titleSponsorLink" href="#" target="_blank" rel="noreferrer">
-          <img class="sponsor-logo" id="titleSponsorLogo" src="images/title-sponsor.PNG" alt="Title sponsor logo" />
-        </a>
-        <div class="sponsor-copy">
-          <p class="sponsor-tag">Presented by</p>
-          <h3 id="titleSponsorName">Title Sponsor</h3>
-          <p class="sponsor-desc" id="titleSponsorDesc"></p>
-          <a class="btn btn-gold sponsor-cta" id="titleSponsorCta" href="#" target="_blank" rel="noreferrer">Visit Sponsor</a>
-        </div>
-      </article>
-	  
-      <article class="card sponsor-card">
-        <a class="sponsor-logo-wrap" id="titleSponsorLink" href="#" target="_blank" rel="noreferrer">
-          <img class="sponsor-logo" id="titleSponsorLogo" src="images/title-sponsor.PNG" alt="Title sponsor logo" />
-        </a>
-        <div class="sponsor-copy">
-          <p class="sponsor-tag">Presented by</p>
-          <h3 id="titleSponsorName">Title Sponsor</h3>
-          <p class="sponsor-desc" id="titleSponsorDesc"></p>
-          <a class="btn btn-gold sponsor-cta" id="titleSponsorCta" href="#" target="_blank" rel="noreferrer">Visit Sponsor</a>
-        </div>
-      </article>
-      </article>
-    </section -->
+ <!-- sponsers-->
 	<section id="sponsor" class="shell section sponsor-section">
-      <h2>Title Sponsor</h2>
+      <h2>Community Partner</h2>
       <p class="section-lead">Our headline partner, powering every ball bowled this season.</p>
 	<div class="sponsor-card">
 
     <div class="sponsor-logos-row">
-        <div class="sponsor-logo-wrap">
-            <img src="images/sponsors/athidhi.PNG" class="sponsordiv" class="sponsor-logo-wrap">
-        </div>
-
-        <div class="sponsor-logo-wrap">            
-            <img src="images/sponsors/bw_gruppe.JPG" class="sponsordiv" class="sponsor-logo-wrap">       
-        </div>
-		
-        <div class="sponsor-logo-wrap">
-            <img src="images/sponsors/in_fincare.PNG" class="sponsordiv" class="sponsor-logo-wrap">
-        </div>
-
-        <div class="sponsor-logo-wrap">            
-            <img src="images/sponsors/king.JPG" class="sponsordiv" class="sponsor-logo-wrap">       
-        </div>
-
-        <div class="sponsor-logo-wrap">
-            <img src="images/sponsors/mora.JPG" class="sponsordiv" class="sponsor-logo-wrap">
-        </div>
-
-        <div class="sponsor-logo-wrap">            
-            <img src="images/sponsors/plasmaair.JPEG" class="sponsordiv" class="sponsor-logo-wrap">       
-        </div>
-
-        <div class="sponsor-logo-wrap">
-            <img src="images/sponsors/spiceland.PNG" class="sponsordiv" class="sponsor-logo-wrap">
-        </div>
-
-        <div class="sponsor-logo-wrap">            
-            <img src="images/sponsors/t1.JPG" class="sponsordiv" class="sponsor-logo-wrap">       
-        </div>	
-
-       <div class="sponsor-logo-wrap">            
-            <img src="images/sponsors/tkh.JPG" class="sponsordiv" class="sponsor-logo-wrap">       
-        </div>		
-
-       <div class="sponsor-logo-wrap">            
-            <img src="images/sponsors/tsv.JPG" class="sponsordiv" class="sponsor-logo-wrap">       
-        </div>		
-
-       <div class="sponsor-logo-wrap">            
-            <img src="images/sponsors/yaazh.JPEG" class="sponsordiv" class="sponsor-logo-wrap">       
-        </div>				
+	
+	<div    id="sponsors-container"></div>
+	
+	  <script src="js/sponsors.js"></script>
+         				
     </div>
 
     <div class="sponsor-copy">
         <div class="sponsor-tag">Presented By</div>
-        <h3>Our Sponsors</h3>
+        <h3>Our Community Partners</h3>
         <p class="sponsor-desc">
-            Proudly supported by our sponsors and partners.
+            Proudly supported by our Community Partners.
         </p>
     </div>
 
 </div>
     </section >
+	 <!-- sponsers-->
 
-	
+	  </main>
 	
   <footer id="contact" class="site-footer">
     <div class="shell footer-grid">

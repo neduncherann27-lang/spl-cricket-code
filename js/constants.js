@@ -1,7 +1,4 @@
- 
- 
-
-const APP_CONFIG = {
+ const APP_CONFIG = {
     CLUB_NAME: "🏏 Stuttgart Premier League",
     EMAIL: "info@thundercc.com",
     PHONE: "+1 123 456 7890",
