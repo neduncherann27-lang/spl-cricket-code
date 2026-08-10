@@ -99,7 +99,7 @@ h1,h2,h3,.stat-value,.team-head span,.year-tab{font-family:"Anton",Impact,sans-s
 .team-head .vs{color:var(--gold)}
 /*.team-body{padding:1.25rem 1.5rem;color:var(--muted)}*/
 .team-body { 
-padding: 0.75rem 1.5rem; 
+padding: 0.55rem 1.25rem; 
 color: var(--muted);}
 .team-body .strong{color:var(--fg);font-weight:600}
 
