@@ -43,3 +43,25 @@ const GALLERY_YEARS = [
     ]
   }
 ];   
+
+/* Videos data — the strip under the player.
+   Two supported shapes:
+
+   YouTube video:
+     { id: "YOUTUBE_ID", title: "...", meta: "..." }
+
+   Your own source file (local folder or any direct URL):
+     { src: "videos/final.mp4", poster: "images/1.jpg", title: "...", meta: "..." }
+     - local file  -> put the .mp4 in  public/spl/videos/  and use "videos/final.mp4"
+     - remote file -> "https://cdn.example.com/final.mp4"
+     - poster is the thumbnail shown in the bar and before playback (optional)
+*/
+const VIDEOS = [
+  { src: "videos/spl_1.mp4", poster: "images/spl-banner.jpg", title: "SPL 2026 — Season Highlights", meta: "Highlights" },
+  {  src: "videos/spl_2.mp4", poster: "images/spl-banner.jpg", title: "SPL 2026 — Season Highlights", meta: "Highlights" }/*,
+  { id: "dQw4w9WgXcQ", title: "Best Catches of the Season", meta: "Fielding" },
+  { id: "dQw4w9WgXcQ", title: "Top 10 Sixes", meta: "Batting" },
+  { id: "dQw4w9WgXcQ", title: "Opening Day Full Match", meta: "Full match" },
+  { id: "dQw4w9WgXcQ", title: "Team Captains Interview", meta: "Interview" }*/
+];
+

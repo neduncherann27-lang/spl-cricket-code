@@ -28,6 +28,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#stats">Stats</a></li>     
 		<li><a href="#gallery">Gallery</a></li>
+        <li><a href="#videos">Videos</a></li>
         <li><a href="#teams">Teams</a></li>
  
 		   <li><a href="#sponsor">Community Partner</a></li>
@@ -88,6 +89,34 @@
 
         <div class="dots" id="dots"></div>
         <p class="slider-meta" id="sliderMeta"></p>
+      </div>
+    </section>
+
+
+    <!-- VIDEOS: player + scrollable bar of multiple videos underneath -->
+    <section id="videos" class="band">
+      <div class="shell section">
+        <h2>Videos</h2>
+        <p class="section-lead">Watch the season back — pick any clip from the bar under the player.</p>
+
+        <div class="video-player">
+          <div class="video-frame-wrap">
+            <iframe id="videoFrame" src="" title="SPL video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            <video id="videoFile" controls playsinline preload="metadata" hidden></video>
+          </div>
+        </div>
+
+
+        <div class="video-now">
+          <h3 id="videoTitle"></h3>
+          <p class="video-meta" id="videoMeta"></p>
+        </div>
+
+        <div class="video-bar-wrap">
+          <button class="bar-btn prev" id="videoBarPrev" type="button" aria-label="Scroll videos left">&#8249;</button>
+          <div class="video-bar" id="videoBar" role="list" aria-label="More videos"></div>
+          <button class="bar-btn next" id="videoBarNext" type="button" aria-label="Scroll videos right">&#8250;</button>
+        </div>
       </div>
     </section>
 
@@ -153,5 +182,6 @@
 
   <script src="js/constants.js"></script>
   <script src="js/gallery.js"></script>
+  <script src="js/videos.js"></script>
 </body>
 </html>
