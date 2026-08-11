@@ -91,16 +91,35 @@ h1,h2,h3,.stat-value,.team-head span,.year-tab{font-family:"Anton",Impact,sans-s
   margin-top: 2.5rem;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.team{overflow:hidden}
-.team-head{display:flex;align-items:center;justify-content:space-between;gap:.75rem;background:var(--pitch);color:var(--pitch-fg);padding:1rem 1.5rem}
+.team{overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.team-head{display:flex;align-items:center;justify-content:center;text-align:center;gap:.75rem;background:var(--pitch);color:var(--pitch-fg);padding:1rem 1.25rem;min-height:5.5rem;min-width:0}
+.team-head span{min-width:0;overflow-wrap:break-word;word-break:break-word;hyphens:auto;font-size:clamp(.95rem,2.6vw,1.35rem);line-height:1.15}
 .team-head .vs{color:var(--gold)}
 /*.team-body{padding:1.25rem 1.5rem;color:var(--muted)}*/
-.team-body { 
-padding: 0.55rem 1.25rem; 
-color: var(--muted);}
+.team-body {
+  padding: 0.75rem 1rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.team-body img{max-width:100%;height:auto;object-fit:contain}
+
+/* Teams responsive layout */
+@media (max-width: 900px) {
+  .team-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+}
+@media (max-width: 600px) {
+  .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
+  .team-head { padding: .85rem .75rem; min-height: 4.75rem; }
+}
+@media (max-width: 360px) {
+  .team-grid { grid-template-columns: minmax(0, 1fr); }
+}
 .team-body .strong{color:var(--fg);font-weight:600}
 
 /* footer */
