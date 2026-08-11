@@ -178,19 +178,19 @@ color: var(--muted);}
     object-fit: contain;
 }
 
-/* Tablet 
+/* Tablet */
 @media (max-width: 900px) {
     #sponsors-container {
         grid-template-columns: repeat(3, 1fr);
     }
-}*/
+}
 
-/* Mobile 
+/* Mobile */
 @media (max-width: 600px) {
     #sponsors-container {
         grid-template-columns: repeat(2, 1fr);
     }
-}*/
+}
 
 
 
