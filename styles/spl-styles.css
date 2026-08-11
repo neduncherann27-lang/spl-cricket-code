@@ -214,3 +214,29 @@ h1,h2,h3,.stat-value,.team-head span,.year-tab{font-family:"Anton",Impact,sans-s
 
 
  
+
+/* videos: player + scrollable video bar underneath */
+.video-player{margin:2.5rem auto 0;max-width:60rem;background:#000;border-radius:.9rem;overflow:hidden;box-shadow:0 18px 40px rgba(15,61,46,.22)}
+.video-frame-wrap{position:relative;padding-top:56.25%}
+.video-frame-wrap iframe,.video-frame-wrap video{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000;object-fit:contain}
+.video-frame-wrap [hidden]{display:none!important}
+
+.video-now{max-width:60rem;margin:1.1rem auto 0;text-align:center}
+.video-now h3{font-size:1.35rem;color:var(--pitch)}
+.video-now .video-meta{margin-top:.2rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.video-bar-wrap{position:relative;max-width:60rem;margin:1.75rem auto 0}
+.video-bar{display:flex;gap:.85rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.35rem .25rem 1rem;scrollbar-width:thin}
+.video-chip{scroll-snap-align:start;flex:0 0 15rem;display:flex;gap:.7rem;align-items:center;text-align:left;padding:.5rem;background:var(--card);border:1px solid var(--border);border-radius:.7rem;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s}
+.video-chip:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(15,61,46,.12)}
+.video-chip.active{border-color:var(--gold);box-shadow:0 0 0 2px rgba(224,168,46,.35)}
+.video-thumb{position:relative;flex:0 0 6.5rem;height:3.7rem;border-radius:.45rem;overflow:hidden;background:var(--secondary)}
+.video-thumb img{width:100%;height:100%;object-fit:cover}
+.video-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.9rem;background:rgba(15,61,46,.35)}
+.video-chip-text{display:flex;flex-direction:column;gap:.15rem;min-width:0}
+.video-chip-title{font-weight:600;font-size:.9rem;line-height:1.25;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.video-chip-meta{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.bar-btn{position:absolute;top:50%;transform:translateY(-60%);width:2.4rem;height:2.4rem;border:0;border-radius:50%;background:var(--pitch);color:var(--pitch-fg);font-size:1.2rem;cursor:pointer;box-shadow:0 6px 14px rgba(0,0,0,.2)}
+.bar-btn.prev{left:-.6rem}
+.bar-btn.next{right:-.6rem}
+.bar-btn:hover{background:var(--gold);color:var(--gold-fg)}
+@media (max-width:640px){.video-chip{flex:0 0 12.5rem}.bar-btn{display:none}}
